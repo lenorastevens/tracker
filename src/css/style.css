@@ -9,6 +9,12 @@
     text-align: center;
     padding: 2%;
 }
+#quote {
+    text-align: center;
+    padding: 3%;
+    font-size: 1.2rem;
+}
+
 .offscreen {
     position: absolute;
     left: -10000px;
@@ -36,7 +42,7 @@ main {
     flex-grow: 1;
     margin: auto;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
     display: flex;
     flex-flow: column nowrap;
 }
@@ -44,7 +50,7 @@ main {
 section {
     border: 5px groove rgb(43, 76, 78);
     background-color: rgb(77, 120, 122);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     padding: 0.5rem;
 }
@@ -68,7 +74,7 @@ section {
 .newItemEntry__form {
     display: flex;
     gap: 0.25rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .newItemEntry__input {
@@ -92,7 +98,7 @@ section {
 }
 
 .listContainer {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     flex-grow: 1;
     display: flex;
     flex-flow: column;
