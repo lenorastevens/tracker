@@ -1,11 +1,13 @@
 import FullList from "../model/FullList"
 
+// interface to render items to HTML elements
 interface DOMList {
     ul: HTMLUListElement,
     clear(): void,
     render(fullList: FullList): void,
 }
 
+// create class for ListTemplate using the DOMList interface
 export default class ListTemplate implements DOMList {
 
     ul: HTMLUListElement
@@ -16,10 +18,12 @@ export default class ListTemplate implements DOMList {
         this.ul = document.getElementById("listItems") as HTMLUListElement
     }
     
+    // method to clear a list item off html
     clear(): void {
         this.ul.innerHTML = ''
     }
 
+    // method to render the FullList
     render(fullList: FullList): void {
         this.clear()
         

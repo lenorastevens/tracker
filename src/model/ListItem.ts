@@ -1,9 +1,11 @@
+// create item interface
 export interface Item {
     id: string,
     item: string,
     checked: boolean,
 }
 
+// create ListItem class using the item interface
 export default class ListItem implements Item {
 
     constructor(
@@ -12,6 +14,7 @@ export default class ListItem implements Item {
         private _checked: boolean = false,
     ) {}
 
+    // get/set methods for the ListItem
     get id(): string {
         return this._id
     }

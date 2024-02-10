@@ -41,39 +41,51 @@ const initApp = (): void => {
     // Update quote every 5 minutes
     setInterval(displayRandomQuote, 5 * 60 * 1000)
 
+    // get new entry form
     const itemEntryForm = document.getElementById("itemEntryForm") as HTMLFormElement
 
+    // listener for a submit
     itemEntryForm.addEventListener("submit", (event: SubmitEvent): void => {
         event.preventDefault()
 
+        // get the add entry input element value
         const input = document.getElementById("newItem") as HTMLInputElement
         const newEntryText: string = input.value.trim()
         if(!newEntryText.length) return
 
+        // assign item a number for tracking
         const itemId: number = fullList.list.length
             ? parseInt(fullList.list[fullList.list.length-1].id) + 1
             : 1
 
+        // put item details together
         const newItem = new ListItem(itemId.toString(), newEntryText)
         
+        // add itme to liast
         fullList.addItem(newItem)
 
+        // render the list details
         template.render(fullList)
 
+        // clear input box for next entry
         input.value = '';
     })
 
+    // get clear button element
     const clearItems = document.getElementById("clearItemsButton") as HTMLButtonElement
 
+    // listen for clear button to get pushed
     clearItems.addEventListener("click", (): void => {
         fullList.clearList()
         template.clear()
     })
 
+    // load and render lists
     fullList.load()
     template.render(fullList)
 
 
 }
 
+// listens for load event and start the init methods
 document.addEventListener("DOMContentLoaded", initApp)

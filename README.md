@@ -1,32 +1,33 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+I am actively working on learning new programming languages and practicing leaning how to apply each language to a programming project.
 
-{Provide a description of the software that you wrote to demonstrate the TypeScript language.}
+I was able to work through tutorials that helped me understand using data types to set up a list program.  My typescript creates a list item, add that to a list class and renders the list class to a main display area.  The user is able to add as many items to the list that they want, they are also able to check off a finished item, delete and item, or clear the whole list.  At the top of the program is an inspiration quote that will change out automatically every 5 minutes or every time the page is reset. 
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+My purpose for writing this software was to give myself the added experience with typescript with my HTML, CSS, and Javascript that I have previously been exposed to.  My research has shown me that typescript is a valuable skill to have in the Web Development industry.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+- VS Code
+- GitHub
+- Netlify
 
-{Describe the programming language that you used and any libraries.}
+- Typescript
+- Vite
+- Node.js
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
+- [TypeScript Tutorial for Beginners](https://youtu.be/d56mG7DezGs?si=M5hqbR2kpmBtdTNp)
+- [Full Beginners' FreeCodeCamp Project](https://youtu.be/EDWwhVoCvHM?si=VXp_bLfMVI3smBpE)
+- [Learn TypeScript - Full Tutorial](https://youtu.be/30LWjhZzg50?si=pr8H_IiJrlrPdm4w)
+- [TypeScript Full Course for Beginners](https://youtu.be/gieEQFIfgYc?si=_46tA3PL7rTR6CcI)
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- This program has a lot of room for expansion.  It would be nice to have the ablitiy to make more than one list or store lists for later, etc.
+- This list tracker is quite plain.  It would be better to have icons, and images to make it more interesting.
+- Quote api source is quite limited.  A better API source would be good to find.

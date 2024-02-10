@@ -1,5 +1,6 @@
 import ListItem from "./ListItem";
 
+// create a list interfce
 interface List {
     list: ListItem[],
     load(): void,
@@ -9,6 +10,7 @@ interface List {
     removeItem(id: string): void,
 }
 
+// create the FullList class that uses the interface
 export default class FullList implements List {
 
     static instance: FullList = new FullList()
@@ -19,6 +21,7 @@ export default class FullList implements List {
         return this._list
     }
 
+    // load method of FullList
     load(): void {
         const storedList: string | null = localStorage.getItem("myList")
         if (typeof storedList !== "string") return
@@ -32,20 +35,24 @@ export default class FullList implements List {
         })
     }
 
+    // save method of FullList
     save(): void {
         localStorage.setItem("myList", JSON.stringify(this._list))
     }
 
+    // clear method of FullList
     clearList(): void {
         this._list = []
         this.save()
     }
 
+    // add item to FullList
     addItem(itemObj: ListItem): void {
         this._list.push(itemObj)
         this.save()
     }
 
+    // remove an item from FullList
     removeItem(id: string): void {
         this._list = this._list.filter(item => item.id !== id)
         this.save()
