@@ -31,7 +31,7 @@ html {
 
 body {
     min-height: 100vh;
-    background-color: #4e2929;
+    background-image: linear-gradient(to bottom right, #4e2929, rgb(252, 182, 185));
     color: #fff;
     padding: 1rem;
     display: flex;
