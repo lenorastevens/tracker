@@ -6,7 +6,7 @@ I was able to work through tutorials that helped me understand using data types 
 
 My purpose for writing this software was to give myself the added experience with typescript with my HTML, CSS, and Javascript that I have previously been exposed to.  My research has shown me that typescript is a valuable skill to have in the Web Development industry.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Typescript Tracker App Demo Video](https://youtu.be/Y5kgdZvQ-Ak)
 
 # Development Environment
 
